@@ -1,0 +1,301 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.container {
+  max-width: 375px;
+}
+.top {
+  width: 90%;
+  margin: auto;
+}
+.header {
+  display: flex;
+
+  padding-top: 1em;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.header-btn {
+  font-size: 1em;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+  background-color: #13183f;
+  padding: 0.7em 1em;
+  border-radius: 1.75em;
+}
+.header-btn:hover {
+  background-color: #666ca3;
+}
+header > p {
+  font-size: 1.8em;
+  font-weight: 800;
+}
+.description h1 {
+  font-size: 2em;
+  font-weight: 800;
+}
+.description p {
+  font-size: 1em;
+  color: #83869a;
+  line-height: 1.75em;
+  letter-spacing: 1.2;
+  padding-bottom: 5px;
+  width: 20em;
+  font-weight: 500;
+  margin-top: 1.4em;
+}
+.starter-btn {
+  font-size: 1.1em;
+  font-weight: 700;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  color: #fff;
+  border-style: none;
+  padding: 1em 2em;
+  border-radius: 1.75em;
+  cursor: pointer;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+/* .div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+.image {
+  width: 90%;
+  margin-right: 10px;
+}
+#offer {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 15px;
+
+  min-height: 7.5em;
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 0.8em; */
+}
+#offer p {
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: 800;
+  margin-left: 1.6em;
+}
+.bottom {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.3em;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+}
+.bottom > div {
+  border-radius: 15px;
+  max-width: 90%;
+  background-color: #fff;
+  min-height: 16em;
+  margin: auto;
+}
+.bottom > .business {
+  margin-bottom: 5em;
+}
+.bottom > div > button {
+  margin-left: 0.9em;
+  margin-top: 1em;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  border-style: none;
+  background: none;
+  color: #f74780;
+}
+.bottom > div > button:hover {
+  color: #ffa7c3;
+}
+.icon {
+  width: 56px;
+  height: 56px;
+  /* transform: translateY(-50%); */
+  margin-top: -1.8em;
+  margin-left: 1em;
+}
+.offer-name {
+  font-size: 1.25em;
+  text-transform: capitalize;
+  margin: 0.7em 0;
+  font-weight: 800;
+  margin-left: 0.8em;
+}
+.offer-description {
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: 28px;
+  color: #83869a;
+  /* margin-bottom: 24px;
+  margin-left: 20px; */
+  margin: auto;
+  max-width: 90%;
+}
+footer {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 10px; */
+  align-items: center;
+  background-color: #13183f;
+  height: 120px;
+}
+footer > p {
+  font-size: 1.7em;
+  font-weight: 800;
+  color: #fff;
+  margin-left: 1em;
+}
+.footer-btn {
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 700;
+  background: linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+  border-style: none;
+  border-radius: 1.5em;
+  padding: 0.7em 1.3em;
+  cursor: pointer;
+  margin-right: 2em;
+}
+@media (min-width: 375px) {
+  .container {
+    max-width: 763px;
+
+    background-image: url(starter-code/assets/image-hero-tablet.png);
+    background-repeat: no-repeat;
+    background-position: left 43vw top -100px;
+  }
+
+  .img {
+    visibility: hidden;
+    width: 0%;
+    height: 0%;
+  }
+  .bottom {
+    margin-top: 6.5em;
+  }
+  .div {
+    max-width: 23.1em;
+    margin-top: 7.5em;
+  }
+  .description {
+    margin-right: 50px;
+  }
+  .description p {
+    width: 355px;
+  }
+  header {
+    margin: 10px 5px;
+  }
+  .top {
+    margin-left: 15px;
+  }
+
+  .header-btn {
+    margin-right: 20px;
+    padding: 0.9em 1.5em;
+  }
+  .bottom {
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 0.5em;
+    padding-bottom: 6em;
+  }
+
+  #offer {
+    min-height: 16em;
+  }
+  .bottom > .business {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 763px) {
+  .container {
+    max-width: 1440px;
+    background-image: url(starter-code/assets/image-hero-desktop.png);
+    background-repeat: no-repeat;
+    background-position: left 50vw top -15vh;
+  }
+
+  .description {
+    width: 32em;
+  }
+
+  .description > h1 {
+    font-size: 3.5em;
+  }
+  .div {
+    margin-top: 8em;
+    width: 33em;
+  }
+  .descriptipn p {
+    font-size: 1.2em;
+  }
+  .bottom {
+    grid-template-columns: 350px 350px 350px;
+    margin: 0 165px;
+  }
+  .bottom div {
+    height: 280px;
+  }
+  .img {
+    width: 65%;
+    height: 65%;
+  }
+  .description {
+    margin-left: 10.3em;
+  }
+  #offer {
+    align-items: flex-start;
+    width: 100%;
+  }
+  #offer p {
+    font-size: 1.9em;
+    justify-content: center;
+    width: 90%;
+    margin-top: 1em;
+    margin-left: 0.7em;
+  }
+  .offer-name {
+    font-size: 24px;
+    margin-top: 1em;
+  }
+  .offer-description {
+    font-size: 18px;
+    margin-top: 1em;
+  }
+  .button-position {
+    margin-top: 2.2em;
+  }
+  .header > p {
+    margin-left: 162px;
+  }
+  footer {
+    justify-content: space-between;
+  }
+  footer > p {
+    margin-left: 7em;
+  }
+  .footer-btn {
+    margin-right: 10em;
+  }
+}
