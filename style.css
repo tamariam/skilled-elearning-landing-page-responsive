@@ -9,11 +9,9 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
-.container {
-  max-width: 375px;
-}
+
 .top {
   width: 90%;
   margin: auto;
@@ -176,9 +174,9 @@ footer > p {
   cursor: pointer;
   margin-right: 2em;
 }
-@media (min-width: 375px) {
+@media (min-width: 768px) {
   .container {
-    max-width: 763px;
+    /* max-width: 763px; */
 
     background-image: url(starter-code/assets/image-hero-tablet.png);
     background-repeat: no-repeat;
@@ -228,12 +226,14 @@ footer > p {
     margin-bottom: 0;
   }
 }
-@media (min-width: 763px) {
+@media (min-width: 1440px) {
   .container {
-    max-width: 1440px;
     background-image: url(starter-code/assets/image-hero-desktop.png);
     background-repeat: no-repeat;
-    background-position: left 50vw top -15vh;
+    background-position: left 55vw top -30vh;
+
+    width: 100%;
+    align-items: center;
   }
 
   .description {
@@ -253,6 +253,7 @@ footer > p {
   .bottom {
     grid-template-columns: 350px 350px 350px;
     margin: 0 165px;
+    justify-content: center;
   }
   .bottom div {
     height: 280px;
@@ -291,6 +292,9 @@ footer > p {
   }
   footer {
     justify-content: space-between;
+  }
+  .header {
+    width: 100%;
   }
   footer > p {
     margin-left: 7em;
